@@ -66,7 +66,12 @@ const items = [
     href: '/app/account',
     icon: UserIcon,
     title: 'Account'
-  }
+  },
+  {
+    href: '/login',
+    icon: UserIcon,
+    title: 'Login'
+  },
 ];
 
 const DashboardSidebar = ({ onMobileClose, openMobile }) => {

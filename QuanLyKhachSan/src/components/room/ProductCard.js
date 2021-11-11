@@ -45,6 +45,14 @@ const ProductCard = ({ product, ...rest }) => (
       <Typography
         align="center"
         color="textPrimary"
+        gutterBottom
+        variant="h5"
+      >
+        {product.tuademoi}
+      </Typography>
+      <Typography
+        align="center"
+        color="textPrimary"
         variant="body1"
       >
         {product.description}

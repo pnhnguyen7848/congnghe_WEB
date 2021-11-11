@@ -18,16 +18,16 @@ const ProductListToolbar = (props) => (
       }}
     >
       <Button>
-        Import
+        EDIT
       </Button>
       <Button sx={{ mx: 1 }}>
-        Export
+        ADD
       </Button>
       <Button
         color="primary"
         variant="contained"
       >
-        Add product
+        CHECK OUT
       </Button>
     </Box>
     <Box sx={{ mt: 3 }}>
