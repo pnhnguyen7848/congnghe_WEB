@@ -84,7 +84,6 @@ const ProductCard = ({ product, ...rest }) => (
           </Typography>
         </Grid>
         <Grid
-          item
           sx={{
             alignItems: 'center',
             display: 'flex'
