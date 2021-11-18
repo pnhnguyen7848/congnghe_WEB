@@ -2,15 +2,14 @@ import './App.css';
 import { BrowserRouter ,Routes, Route} from "react-router-dom";
 import {Home} from './components/Home';
 import {News} from './components/News';
-import {MenuNgang} from './components/MenuNgang';
 import { Projects } from './components/Projects';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
-
+import {HeaderW} from './components/Layouts/HeaderW';
 function App() {
   return (
     <BrowserRouter>
-      <MenuNgang/>
+      <HeaderW/>
       <Routes>
         <Route path='/home' element={<Home/>} />
         <Route path='/news' element={<News/>} />
