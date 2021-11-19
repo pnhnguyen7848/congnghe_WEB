@@ -3,7 +3,6 @@ import { styled } from "@mui/material/styles";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import ProjectCard from '../components/project/ProjectCard';
-import { ProjectNavbar } from '../components/project/ProjectNavbar';
 
 const StyleBox = styled(Box)({
   padding: '1.5em',
@@ -25,42 +24,13 @@ const StyleProjects = styled(ProjectCard)({
 export default function Projects() {
   return (
     <React.Fragment>
+<<<<<<< HEAD
       <ProjectNavbar></ProjectNavbar>
       <Container >
+=======
+      <Container width="200">
+>>>>>>> main
         <StyleBox >
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
           <StyleProjects />
           <StyleProjects />
           <StyleProjects />
