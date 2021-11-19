@@ -26,7 +26,7 @@ export default function Projects() {
   return (
     <React.Fragment>
       <ProjectNavbar></ProjectNavbar>
-      <Container width="200">
+      <Container >
         <StyleBox >
           <StyleProjects />
           <StyleProjects />

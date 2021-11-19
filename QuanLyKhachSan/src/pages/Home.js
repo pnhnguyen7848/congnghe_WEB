@@ -23,6 +23,8 @@ export const Home = () => {
       <>
       <StyleBoxHome>
       <Item > <SlideMenu/></Item>
+      <Item > <SlideMenu/></Item>
+      
       <Item > <AutoGrid/></Item>
       </StyleBoxHome>
      
