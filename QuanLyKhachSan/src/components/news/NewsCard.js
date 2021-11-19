@@ -6,7 +6,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { styled } from "@mui/material/styles";
-import { shadows } from '@mui/system';
 
 const StyleButton = styled(Button)({
     color: 'black',
@@ -16,7 +15,7 @@ const StyleCard = styled(Card)({
     marginTop: 8,
     marginBottom: 8,
     borderRadius: 0,
-    border: 0
+    boxShadow: 'none'
   });
 
 export default function NewsCard() {
