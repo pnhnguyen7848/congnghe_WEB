@@ -6,8 +6,8 @@ import { Link } from '@mui/material';
 
 const StyleCard = styled(Card)({
   width: 345,
-  marginTop: 8,
-  marginBottom: 8,
+  marginTop: 9,
+  marginBottom: 9,
   maxHeight: 200,
   borderRadius: 0
 });
