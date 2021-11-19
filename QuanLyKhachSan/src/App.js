@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter ,Routes, Route} from "react-router-dom";
 import {Home} from './components/Home';
-import {News} from './components/News';
-import { Projects } from './components/Projects';
+import NewsList from './pages/NewsList';
+import ProjectList from './pages/ProjectList';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import {HeaderW} from './components/Layouts/HeaderW';
@@ -13,8 +13,8 @@ function App() {
       <HeaderW/>
       <Routes>
         <Route path='/home' element={<Home/>} />
-        <Route path='/news' element={<News/>} />
-        <Route path='/projects' element={<Projects/>} />
+        <Route path='/news' element={<NewsList/>} />
+        <Route path='/projects' element={<ProjectList/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contact/>} />\
 
