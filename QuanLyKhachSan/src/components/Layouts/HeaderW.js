@@ -12,7 +12,7 @@ const BootstrapButton = styled(Button)({
     fontWeight: "300",
     color: "#333333",
     lineHeight: 0,
-    
+    width:"100px",
     backgroundColor: "#ffff",
     
     fontFamily: ["Roboto"].join(","),
@@ -49,7 +49,7 @@ export const HeaderW = () => {
                     </BootstrapButton> 
                     
                 </Link>
-                <Link to="/projects" style={{textDecoration:"none"}}>
+                <Link to="/home" style={{textDecoration:"none"}}>
                     <BootstrapButton variant="contained" style={{marginLeft:"-25px",marginRight:"-25px"}}>
                      |  
                     </BootstrapButton> 
@@ -63,7 +63,7 @@ export const HeaderW = () => {
                 
                 </Link>
 
-                <Link to="/projects" style={{textDecoration:"none"}}>
+                <Link to="/home" style={{textDecoration:"none"}}>
                     <BootstrapButton variant="contained" style={{marginLeft:"-25px",marginRight:"-25px"}}>
                      |  
                     </BootstrapButton> 
@@ -76,7 +76,7 @@ export const HeaderW = () => {
                 
                 </Link>                   
                 
-                <Link to="/projects" style={{textDecoration:"none"}}>
+                <Link to="/home" style={{textDecoration:"none"}}>
                     <BootstrapButton variant="contained" style={{marginLeft:"-25px",marginRight:"-25px"}}>
                      |  
                     </BootstrapButton> 

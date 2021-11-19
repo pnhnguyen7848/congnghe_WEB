@@ -6,6 +6,7 @@ import { Projects } from './components/Projects';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import {HeaderW} from './components/Layouts/HeaderW';
+import {FooterW} from './components/Layouts/FooterW';
 function App() {
   return (
     <BrowserRouter>
@@ -18,7 +19,7 @@ function App() {
         <Route path='/contact' element={<Contact/>} />\
 
       </Routes>
-     
+      <FooterW/>
      </BrowserRouter>
     
    

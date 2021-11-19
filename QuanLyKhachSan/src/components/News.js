@@ -1,27 +1,51 @@
-import React from 'react';
-import '../App.css';
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 
-const NewsDetail = (props) => {
-    return (
-        <div className="">
-            <h3 style={{ color: 'red' }}>{props.tieuDe}</h3>
-            <div>{props.noiDung}</div>
-        </div>
-    )
-};
+import 'react-slideshow-image/dist/styles.css'
+
 export const News = () => {
-    const danhSachTin = [
-        { tieuDe: 'COVID19', noiDung: 'Ảnh hưởng của COVID-19 quá lớn' },
-        { tieuDe: 'VN - Brasil: 1 - 7', noiDung: 'Đội tuyển Futsal VN thua Brasil 1-7 ở trận đấu đêm qua' },
-    ];
+   
     return (
-        <>
-            <h2>My Blogs</h2>
-            <NewsDetail tieuDe="Mưa quá" noiDung="Quá xá mưa" />
-            {danhSachTin.map((item) => {
-                return <NewsDetail tieuDe={item.tieuDe} noiDung={item.noiDung} />
-            })}
-        </>
+        
+         <div class="news-gt">
+            <AutoGrid></AutoGrid>
+         </div>
+         
     )
 };
 
+
+const Item = styled(Paper)(({ theme }) => ({
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    boxShadow: "none",
+    textTransform: "none",
+    marginTop:"1rem",
+  }));
+  
+  export default function AutoGrid() {
+    return (
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={3}>
+          <Grid item xs>
+          <Item> news</Item>
+          </Grid>
+          <Grid item xs>
+            <Item> news</Item>
+          </Grid>
+          <Grid item xs>
+          <Item> news</Item>
+          </Grid>
+          <Grid item xs>
+          <Item> news</Item>
+          </Grid>
+        </Grid>
+      </Box>
+    );
+  }
+  
