@@ -77,8 +77,6 @@
   background: #efefef;
   text-align: center;
 }
-<<<<<<< HEAD
-=======
 
 .news-gt {
   display: flex;
@@ -123,4 +121,3 @@
 .about-picture:active img{
   filter: brightness(35%);
 }
->>>>>>> main

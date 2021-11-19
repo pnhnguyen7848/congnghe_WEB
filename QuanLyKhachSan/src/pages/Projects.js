@@ -24,12 +24,7 @@ const StyleProjects = styled(ProjectCard)({
 export default function Projects() {
   return (
     <React.Fragment>
-<<<<<<< HEAD
-      <ProjectNavbar></ProjectNavbar>
       <Container >
-=======
-      <Container width="200">
->>>>>>> main
         <StyleBox >
           <StyleProjects />
           <StyleProjects />
