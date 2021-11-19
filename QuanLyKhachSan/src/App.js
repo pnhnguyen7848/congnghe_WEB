@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter ,Routes, Route} from "react-router-dom";
-import {Home} from './components/Home';
-import NewsList from './pages/NewsList';
-import ProjectList from './pages/ProjectList';
-import { About } from './components/About';
-import { Contact } from './components/Contact';
+import {Home} from './pages/Home';
+import NewsList from './pages/News';
+import ProjectList from './pages/Projects';
+import { About } from './pages/About';
+import { Contact } from './pages/Contact';
 import {HeaderW} from './components/Layouts/HeaderW';
 import {FooterW} from './components/Layouts/FooterW';
 function App() {

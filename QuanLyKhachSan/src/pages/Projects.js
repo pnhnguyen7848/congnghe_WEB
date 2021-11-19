@@ -40,6 +40,30 @@ export default function ProjectList() {
           <StyleProjects />
           <StyleProjects />
           <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
+          <StyleProjects />
         </StyleBox>
       </Container>
     </React.Fragment>
