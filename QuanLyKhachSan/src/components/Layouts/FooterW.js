@@ -1,22 +1,35 @@
-import { Link } from 'react-router-dom';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import { styled } from "@mui/material/styles";
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+import { Button } from "@mui/material";
 import Grid from '@mui/material/Grid';
+import { Link } from "@mui/material";
 
-const BootstrapButton = styled(Button)({
+
+export const FooterW = () => {
+    return (
+        <div>
+            
+           <AutoGrid/>
+        </div>
+    )
+};
+
+
+
+  
+const FootButton = styled(Button)({
     boxShadow: "none",
+    boxSizing: "small",
     textTransform: "none",
     fontSize: 12,
-    fontWeight: "300",
+    fontWeight: 300,
     color: "#333333",
     lineHeight: 0,
-    
+    padding:0,
     backgroundColor: "#ffff",
-    
+    marginLeft: "-24px",
+    marginRight: "-24px",
     fontFamily: ["Roboto"].join(","),
     "&:hover": {
       backgroundColor: "#fff",
@@ -31,90 +44,99 @@ const BootstrapButton = styled(Button)({
     
   });
 
-export const FooterW = () => {
-    return (
-        <div class="App-header">
+
+const GridMenu = styled(Grid)(({ 
+    
+
+textAlign: 'center',
+
+boxShadow: "none",
+textTransform: "none",
+marginTop:"1rem",
+
+color: "#333333",
+
+}));
+
+export default function AutoGrid() {
+return (
+    <div class="App-footer">
             
-            <Stack spacing={2} direction="row">
-              
-              
+     
+        
+
+        <Box sx={{ flexGrow: 1 }} >
+            <Grid container spacing={3}>
+            <GridMenu item xs  >
                 <Link to="/projects" style={{textDecoration:"none"}}>
-                    <BootstrapButton variant="contained" >
-                    Projects     
-                    </BootstrapButton> 
-                    
+                    <FootButton href="https://github.com/Joeyryanbridges">
+                      
+                                Facebook  
+                        
+                    </FootButton>      
                 </Link>
-                <Link to="/home" style={{textDecoration:"none"}}>
-                    <BootstrapButton variant="contained" style={{marginLeft:"-25px",marginRight:"-25px"}}>
-                     |  
-                    </BootstrapButton> 
-                </Link>
-              
-            
+            </GridMenu>
+
+            <GridMenu item xs>
+                <FootButton>
+                        
+                        | 
+                
+                </FootButton>   
+            </GridMenu>
+
+            <GridMenu item xs>
                 <Link to="/news" style={{textDecoration:"none"}}>
-                    <BootstrapButton variant="contained" >
-                    News
-                    </BootstrapButton> 
-                
+                <FootButton href="https://github.com/Joeyryanbridges">
+                      
+                      Facebook  
+              
+          </FootButton>     
                 </Link>
-
-                <Link to="/home" style={{textDecoration:"none"}}>
-                    <BootstrapButton variant="contained" style={{marginLeft:"-25px",marginRight:"-25px"}}>
-                     |  
-                    </BootstrapButton> 
-                </Link>
-
-                <Link to="/about" style={{textDecoration:"none"}}>
-                    <BootstrapButton variant="contained" >
-                    About
-                    </BootstrapButton> 
+            </GridMenu>
+            <GridMenu item xs>
+                <FootButton>
+                        
+                        | 
                 
-                </Link>                   
-                
-                <Link to="/home" style={{textDecoration:"none"}}>
-                    <BootstrapButton variant="contained" style={{marginLeft:"-25px",marginRight:"-25px"}}>
-                     |  
-                    </BootstrapButton> 
-                </Link>
+                </FootButton>   
+            </GridMenu>
 
-                <Link to="/contact" style={{textDecoration:"none"}}>
-                    <BootstrapButton variant="contained" >
-                    Contact
-                    </BootstrapButton> 
-                
-                </Link>   
-                
-            </Stack>
-            < AutoGrid />
-        </div>
-    )
-};
-
-const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    boxShadow: "none",
-    textTransform: "none",
-    marginTop:"1rem",
-  }));
-  
-  export default function AutoGrid() {
-    return (
-      <Box sx={{ flexGrow: 1 }} style={{width:'1440px'}}>
-        <Grid container spacing>
-          <Grid item xs>
             
-          </Grid>
-          <Grid item xs>
-            <Item>a</Item>
-          </Grid>
-          <Grid item xs>
-           
-          </Grid>
-        </Grid>
-      </Box>
-    );
-  }
+
+            <GridMenu item xs>
+                <Link to="/about" style={{textDecoration:"none"}}>
+                <FootButton href="https://github.com/Joeyryanbridges">
+                      
+                      Facebook  
+              
+          </FootButton>   
+                </Link>
+            </GridMenu>
+            
+            <GridMenu item xs>
+                <FootButton>
+                        
+                        | 
+                
+                </FootButton>   
+            </GridMenu>
+
+            <GridMenu item xs>
+                <Link to="/contact" style={{textDecoration:"none"}}>
+                <FootButton href="https://github.com/Joeyryanbridges">
+                      
+                      Facebook  
+              
+          </FootButton>           
+                </Link>
+            </GridMenu>
+            </Grid>
+        </Box>
+    </div>
+    
+);
+}
+  
+  
   

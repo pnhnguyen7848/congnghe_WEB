@@ -11,6 +11,7 @@ import 'react-slideshow-image/dist/styles.css'
 
 export const Home = () => {
     return (
+      
         <AutoGrid>
           
         </AutoGrid>
@@ -82,3 +83,5 @@ const Slideshow = () => {
       </div>
     )
 }
+
+
