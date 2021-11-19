@@ -4,17 +4,34 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import SlideMenu from '../components/slide/SlideMenu';
 
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
+const StyleBoxHome = styled(Box)({
+  padding: '1.5em',
+  // backgroundColor: '#cfe8fc',
+  height: '100vh',
+  
+  justifyContent: 'space-around',
+  flexWrap: 'wrap',
+  alignContent: 'flex-start',
+  flexDirection: 'colurmn'
+});
 
 
 export const Home = () => {
     return (
+      <>
+      <StyleBoxHome>
+      <Item > <SlideMenu/></Item>
+      <Item > <AutoGrid/></Item>
+      </StyleBoxHome>
+     
       
-        <AutoGrid>
+      </>
+      
+       
           
-        </AutoGrid>
+       
     )
 };
 
@@ -29,59 +46,32 @@ const Item = styled(Paper)(({ theme }) => ({
   boxShadow: "none",
   textTransform: "none",
   marginTop:"1rem",
+ 
+  alignItems: "center",
+  marginLeft: "15rem",
+  marginRight: "15rem",
 }));
 
-export default function AutoGrid() {
+
+export function AutoGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid item xs>
-          
-        </Grid>
-        <Grid item xs={8}>
-          <Item><Slideshow/></Item>
+            <p>baule</p>
         </Grid>
         <Grid item xs>
-         
+            <p>baule</p>
+        </Grid>
+        <Grid item xs>
+            <p>baule</p>
+        </Grid>
+        <Grid item xs>
+            <p>baule</p>
         </Grid>
       </Grid>
     </Box>
   );
-}
-
-
-
-
-const slideImages = [
-  {
-    url: "https://www.pexels.com/photo/view-of-cityscape-325185",
-    caption: 'Slide 1'
-   
-  },
-  {
-    url: './img/bg2.jpg',
-    caption: 'Slide 2'
-  },
-  {
-    url: './bg1.jpg',
-    caption: 'Slide 3'
-  },
-];
-
-const Slideshow = () => {
-    return (
-      <div className="slide-container">
-        <Slide>
-         {slideImages.map((slideImage, index)=> (
-            <div className="each-slide" key={index}>
-              <div style={{'backgroundImage': `url(${slideImage.url})`}}>
-                <span>{slideImage.caption}</span>
-              </div>
-            </div>
-          ))} 
-        </Slide>
-      </div>
-    )
 }
 
 

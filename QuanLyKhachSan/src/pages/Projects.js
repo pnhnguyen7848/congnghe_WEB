@@ -22,7 +22,7 @@ const StyleProjects = styled(ProjectCard)({
   },
 });
 
-export default function ProjectList() {
+export default function Projects() {
   return (
     <React.Fragment>
       <ProjectNavbar></ProjectNavbar>
