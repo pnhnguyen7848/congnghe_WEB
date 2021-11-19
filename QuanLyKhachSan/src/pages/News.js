@@ -21,7 +21,7 @@ const StyleNews = styled(NewsCard)({
   },
 });
 
-export default function NewsList() {
+export default function News() {
   return (
     <React.Fragment>
       <Container width="200">
@@ -33,11 +33,7 @@ export default function NewsList() {
           <StyleNews />
           <StyleNews />
           <StyleNews />
-          <StyleNews />
-          <StyleNews />
-          <StyleNews />
-          <StyleNews />
-          <StyleNews />
+         
         </StyleBox>
       </Container>
     </React.Fragment>

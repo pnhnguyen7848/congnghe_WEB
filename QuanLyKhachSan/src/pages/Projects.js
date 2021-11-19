@@ -21,10 +21,10 @@ const StyleProjects = styled(ProjectCard)({
   },
 });
 
-export default function ProjectList() {
+export default function Projects() {
   return (
     <React.Fragment>
-      <Container width="200">
+      <Container >
         <StyleBox >
           <StyleProjects />
           <StyleProjects />
