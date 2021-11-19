@@ -9,9 +9,7 @@ const StyleCard = styled(Card)({
   marginTop: 8,
   marginBottom: 8,
   maxHeight: 200,
-  border: 'none',
-  borderRadius: 'none',
-
+  borderRadius: 0
 });
 
 export default function ProjectCard() {

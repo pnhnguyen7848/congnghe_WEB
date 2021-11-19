@@ -6,14 +6,22 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { styled } from "@mui/material/styles";
+import { shadows } from '@mui/system';
 
 const StyleButton = styled(Button)({
-    
+    color: 'black',
 });
+
+const StyleCard = styled(Card)({
+    marginTop: 8,
+    marginBottom: 8,
+    borderRadius: 0,
+    border: 0
+  });
 
 export default function NewsCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <StyleCard sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="200"
@@ -30,7 +38,7 @@ export default function NewsCard() {
         </Typography>
       </CardContent>
       
-    </Card>
+    </StyleCard>
   );
 }
 
