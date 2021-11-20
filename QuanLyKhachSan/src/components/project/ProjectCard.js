@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Link } from '@mui/material';
+import PropTypes from 'prop-types';
 
-export default function ProjectCard({ project, ...rest }) {
+export default function ProjectCard({ project }) {
   return (
     <Link class="about-picture" href={project.url}>
       <img src={project.image} alt="activities1" />
@@ -11,3 +12,7 @@ export default function ProjectCard({ project, ...rest }) {
     </Link>
   );
 }
+
+ProjectCard.propTypes = {
+  project: PropTypes.array.isRequired
+};

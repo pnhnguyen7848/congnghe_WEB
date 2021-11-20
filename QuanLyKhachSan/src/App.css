@@ -92,11 +92,12 @@
 
 .about-picture{
   position: relative;
-  margin: 6.5px 0;
+  margin: 9px 0;
 }
 
 .about-picture img{
-  width: 350px;
+  width: 345px;
+  height: 220px;
 }
 
 .picture-tittle{

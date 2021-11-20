@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import ProjectCard from '../components/project/ProjectCard';
+import projectsMock from '../__mocks__/projectsMock';
 
 const StyleBox = styled(Box)({
   padding: '1.5em',
@@ -15,20 +16,15 @@ const StyleBox = styled(Box)({
   flexDirection: 'colurmn'
 });
 
-const StyleProjects = styled(ProjectCard)({
-  "&:hover": {
-    color: 'red'
-  },
-});
 
 export default function Projects() {
   return (
     <React.Fragment>
       <Container >
         <StyleBox >
-          <StyleProjects />
-          <StyleProjects />
-          <StyleProjects />
+          {projectsMock.map((project) => (
+            <ProjectCard project={project} />
+          ))}
         </StyleBox>
       </Container>
     </React.Fragment>

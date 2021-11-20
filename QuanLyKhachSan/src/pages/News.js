@@ -3,10 +3,10 @@ import { styled } from "@mui/material/styles";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import NewsCard from '../components/news/NewsCard';
+import newsMock from '../__mocks__/newsMock';
 
 const StyleBox = styled(Box)({
   padding: '1.5em',
-  // backgroundColor: '#cfe8fc',
   height: '100vh',
   display: 'flex',
   justifyContent: 'space-around',
@@ -15,25 +15,14 @@ const StyleBox = styled(Box)({
   flexDirection: 'colurmn'
 });
 
-const StyleNews = styled(NewsCard)({
-  "&:hover": {
-    color: 'red'
-  },
-});
-
 export default function News() {
   return (
     <React.Fragment>
       <Container width="200">
         <StyleBox >
-          <StyleNews />
-          <StyleNews />
-          <StyleNews />
-          <StyleNews />
-          <StyleNews />
-          <StyleNews />
-          <StyleNews />
-         
+          {newsMock.map((news) => (
+            <NewsCard news={news} />
+          ))}
         </StyleBox>
       </Container>
     </React.Fragment>

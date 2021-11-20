@@ -3,41 +3,60 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { styled } from "@mui/material/styles";
+import { Link } from '@mui/material';
+import PropTypes from 'prop-types';
 
-const StyleButton = styled(Button)({
-    color: 'black',
-});
 
 const StyleCard = styled(Card)({
-    marginTop: 8,
-    marginBottom: 8,
-    borderRadius: 0,
-    boxShadow: 'none'
-  });
+  marginTop: 8,
+  marginBottom: 8,
+  borderRadius: 0,
+  boxShadow: 'none'
+});
 
-export default function NewsCard() {
+const StyleCardContent = styled(CardContent)({
+  padding: '0'
+});
+
+const StyleCardActions = styled(CardActions)({
+  padding: '10px 0'
+});
+
+const StyleLink = styled(Link)({
+  color: 'black',
+  textDecoration: 'none',
+  fontWeight: '700'
+});
+
+const StyleTypography = styled(Typography)({
+  fontsize: '11px',
+  lineHeight: '15px'
+});
+
+export default function NewsCard({ news }) {
   return (
     <StyleCard sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="200"
-        image="https://dplusvn.com/wp-content/uploads/2020/01/hinh-anh-van-phong-cong-ty-ggroup-2.jpg"
+        image={news.image}
         alt="green iguana"
       />
-      <CardContent>
-      <CardActions>
-        <StyleButton size="small">Photoshooting | Piera House</StyleButton>
-      </CardActions>
+      <StyleCardContent>
+        <StyleCardActions>
+          <StyleLink href={news.url}>{news.title}</StyleLink>
+        </StyleCardActions>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {news.description}
         </Typography>
-      </CardContent>
-      
+      </StyleCardContent>
+
     </StyleCard>
   );
 }
 
+NewsCard.propTypes = {
+  news: PropTypes.array.isRequired
+};
