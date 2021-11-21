@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { styled } from "@mui/material/styles";
-import { Link } from '@mui/material';
+import { Button, Link } from '@mui/material';
 import PropTypes from 'prop-types';
 
 
@@ -31,8 +31,7 @@ const StyleLink = styled(Link)({
 });
 
 const StyleTypography = styled(Typography)({
-  fontsize: '11px',
-  lineHeight: '15px'
+  fontsize: '11px'
 });
 
 export default function NewsCard({ news }) {
@@ -48,11 +47,11 @@ export default function NewsCard({ news }) {
         <StyleCardActions>
           <StyleLink href={news.url}>{news.title}</StyleLink>
         </StyleCardActions>
-        <Typography variant="body2" color="text.secondary">
+        <StyleTypography variant="body2" color="text.secondary">
           {news.description}
-        </Typography>
+        </StyleTypography>
+        {/* <Button type="submit">Book</Button> */}
       </StyleCardContent>
-
     </StyleCard>
   );
 }
